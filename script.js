@@ -1,14 +1,30 @@
-let number = +prompt("Введите целое число");
+let btnCreate = document.querySelector('.btn-create');
+let btnRemove = document.querySelector('.btn-remove');
+let newElements = document.querySelector('.new-elements');
+let elem;
+let numberElements = document.querySelector('.number-elements');
 
-function checkNumberDivide(num) {
-    let flag = false;
-    
-  for(let i = 2; i < num; i++) {
-        if(num % i == 0) {
-            flag = true;
+
+btnCreate.onclick = function() {
+    for(let i = 0; i < +numberElements.value; i++) {
+
+        elem = document.createElement('p');
+        elem.textContent = "Новый абзац...";
+        elem.classList.add('elem');
+
+        if(i == 0) {
+            elem.style.backgroundColor = "darkred";
+            elem.style.color = "white";
         }
-   }
-    return flag;
+
+        newElements.append(elem);
+    }
 }
 
-alert(checkNumberDivide(number));
+let children = newElements.childNodes;
+
+btnRemove.onclick = function() {
+    for(let i = children.length - 1; i > -1; i--) {
+        newElements.removeChild(children[i]);
+    }
+}

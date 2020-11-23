@@ -1,0 +1,11 @@
+.btn-create {
+    padding: 10px 15px;
+    border-radius:10px ;
+    border: none;
+    box-shadow: 1px 1px 3px rgb(rgb(4, 0, 255), green, blue);
+    color: royalblue;
+    text-transform:uppercase ;
+    background-color: rgb(4, 0, 255);
+    
+
+}

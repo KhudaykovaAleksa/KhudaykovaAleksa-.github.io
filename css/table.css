@@ -1,122 +1,138 @@
-
-
-        html {
-            font-size: 12px;
-            font-family: "Verdana", sans-serif;
-        }
-:focus {
-    outline: 1px solid greenyellow ;
+/*** Общие свойства ***/
+html {
+    font-size: 12px;
+    font-family: "Verdana", sans-serif;
 }
-        .btn {
-            display: inline-block;
-            border: 1px solid rgb(192, 191, 191);
-            padding: 10px 20px;
-            text-transform: uppercase;
-            font-size: 1rem;
-            font-weight: bold;
 
-            transition: all 0.5s;
-        }
+:focus {
+    outline: 1px solid rgb(73, 230, 86);
+}
 
-        .btn:hover {
-            cursor: pointer;
-            filter: contrast(170%);
-        }
+.btn {
+    display: inline-block;
+    border: 1px solid rgb(192, 191, 191);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
 
-        .table-settings {
-            float: left;
-            padding: 1.8rem 1.2rem;
-            border-radius: 10px;
-            background-color: rgb(191, 225, 253);
-        }
+    transition: all 0.5s;
+}
 
-        .table-settings fieldset {
-            margin-bottom: 0.8rem;
-            border: 3px ridge rgba(219, 199, 84, 0.5);
-            background-color: rgb(236, 241, 241);
-        }
+.btn:hover {
+    cursor: pointer;
+    filter: contrast(170%);
+}
 
-        .table-settings fieldset:last-child {
-            margin-bottom: 0;
-        }
+.btn:active {
+    filter: saturate(200%);
+    outline: none;
+}
+/*******/
 
-        .table-settings legend {
-            padding-left: 0.8rem;
-            padding-right: 0.8rem;
-            font-size: 1rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: rgb(106, 73, 167);
-        }
+/*** Свойства формы и её элементов ***/
+.table-settings {
+    min-width: 550px;
+    max-width: 650px;
+    padding: 1.8rem 1.2rem;
+    border-radius: 10px;
+    background-color: rgb(191, 225, 253);
+}
 
-        .table-settings .form-group {
-            display: flex;
-            align-items: center;
-            line-height: 160%;
-            margin-bottom: 0.5rem;
-        }
+.table-settings fieldset {
+    margin-bottom: 0.8rem;
+    border: 3px ridge rgba(219, 199, 84, 0.5);
+    background-color: rgb(236, 241, 241);
+}
 
-        .table-settings .form-buttons {
-            padding: 10px;
-            justify-content: center;
-        }
+.table-settings fieldset:last-child {
+    margin-bottom: 0;
+}
 
-        .form-group label {
-            color: rgb(105, 158, 45);
-            font-family: "Georgia", serif;
-            font-weight: bold;
-        }
+.table-settings legend {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(106, 73, 167);
+}
 
-        .form-group input,
-        .form-group select {
-            border: 1px solid rgb(214, 214, 214);
-            padding: 0.5rem;
-        }
+.table-settings .form-group {
+    display: flex;
+    align-items: center;
+    line-height: 160%;
+    margin-bottom: 0.5rem;
+}
 
-        .table-settings .btn-create {
-            margin-right: 20px;
-            background-image: linear-gradient(rgb(48, 126, 48), rgb(37, 105, 37));
-            color: #fff;
-        }
+.table-settings .form-buttons {
+    padding: 10px;
+    justify-content: center;
+}
 
-        .table-settings .btn-remove {
-            background-image: linear-gradient(rgb(230, 69, 69), rgb(126, 43, 43));
-            color: #fff;
-        }
+.form-group label {
+    color: rgb(105, 158, 45);
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    margin-right: 1rem;
+}
 
-        .table {
-            border: 5px solid blue;
-            border-collapse: collapse;
-        }
+.form-group input,
+.form-group select {
+    border: 1px solid rgb(214, 214, 214);
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
 
-        .table-name {
-            margin-bottom: 0.8rem;
-            font-family: "Verdana", sans-serif;
-            font-weight: bold;
-            font-size: 1.25rem;
-            text-transform: uppercase;
-            color: darkgreen;
-        }
+.form-group input[type="color"] {
+    border: none;
+}
 
-        .table-header {
-            background-color: rgb(141, 190, 245);
-        }
+.table-settings .btn-create {
+    margin-right: 20px;
+    background-image: linear-gradient(rgb(48, 126, 48), rgb(37, 105, 37));
+    color: #fff;
+}
 
-        .table-body {
-            background-color: rgb(231, 250, 186);
-        }
+.table-settings .btn-remove {
+    background-image: linear-gradient(rgb(230, 69, 69), rgb(126, 43, 43));
+    color: #fff;
+}
+/*******/
 
-        .table-footer {
-            background-color: rgb(253, 203, 203);
-        }
+/* Свойства сгенерированной таблицы */
+.table {
+    border: 5px solid blue;
+    border-collapse: collapse;
+}
 
-        .table-row,
-        .table-data {
-            border: 2px solid lightgreen;
-        }
+.table-name {
+    margin-bottom: 0.8rem;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: darkgreen;
+}
 
-        .table-data {
-            padding: 10px;
-        }
+.table-header {
+    background-color: rgb(141, 190, 245);
+}
 
-    
+.table-body {
+    background-color: rgb(231, 250, 186);
+}
+
+.table-footer {
+    background-color: rgb(253, 203, 203);
+}
+
+.table-row,
+.table-data {
+    border: 2px solid lightgreen;
+}
+
+.table-data {
+    padding: 10px;
+}
+/*******/
